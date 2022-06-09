@@ -72,5 +72,32 @@ Off the Exchange
 On the Exchange
 Yes
 
+DEHBDedCombInnOonFamilyPerPerson - The dollar amount of the combined in/out of network, individual deductible for drug EHB benefits 
+
+DEHBDedCombInnOonIndividual - The dollar amount of the combined in/out of network, individual deductible for drug EHB benefits 
+
+DEHBDedInnTier1Coinsurance - The percentage used for the tier 1 in network coinsurance for drug EHB benefits, unless a different coinsurance is listed for a specific benefit 
+
+DEHBDedInnTier1Family - The dollar amount of the tier 1 in network, family deductible for drug EHB benefits 
+
+DEHBDedInnTier1FamilyPerGroup - The dollar amount of the tier 1 in network, family per group deductible for drug EHB benefits 
+
+DEHBDedInnTier1FamilyPerPerson	 - The dollar amount of the tier 1 in network, family per person deductible for drug EHB benefits 
+
+DEHBDedInnTier1Individual - The dollar amount of the tier 1 in network, individual deductible for drug EHB benefits 
+	 
+DEHBDedInnTier2Coinsurance - The percentage used for the tier 2 in network coinsurance for drug EHB benefits, unless a different coinsurance is listed for a specific benefit 
+
+DEHBDedInnTier2Family - The dollar amount of the tier 2 in network, family deductible for drug EHB benefits 
+
+DEHBDedInnTier2FamilyPerGroup - The dollar amount of the tier 2 in network, family per group deductible for drug EHB benefits 
+
+DEHBDedInnTier2FamilyPerPerson	 - The dollar amount of the tier 2 in network, family per person deductible for drug EHB benefits 
+
+DEHBDedInnTier2Individual - The dollar amount of the tier 2 in network, individual deductible for drug EHB benefits 
+
+DEHBDedOutOfNetFamily	- The dollar amount of the out of network, family deductible for drug EHB benefits 
+
+DEHBDedOutOfNetFamilyPerGroup - The dollar amount of the out of network, family per group deductible for drug EHB benefits 
 
 	
