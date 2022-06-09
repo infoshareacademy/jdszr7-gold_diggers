@@ -1,22 +1,20 @@
-PlanAtributes.DentalOnlyPlan yes/no
-
-PlanAtributes.TIN -  [TIN] to osobisty numer używany dla celów podatkowych w danym kraju (czyli w kraju, w którym zgłasza się swoje podatki)
-
-PlanAtributes.StandardComponentId  HIOS portal 44-45 Component ID is the base identification of an insurance plan
-prior to it being submitted to a system.
-
+Kolumny kluczowe
 PlanAtributes.PlanMarketingName 4871 pozycji, osobny plik 
+PlanAtributes.MetalLevel 10 opcji, osobny plik 
 
-PlanAtributes.HIOSProductId strona 45 
+Bronze
+Catastrophic
+EPO
+Gold
+High
+HMO
+Low
+Platinum
+PPO
+Silver
 
-PlanAtributes.HPID duzo pustych rekordow 
 
-PlanAtributes.NetworkId powiazany ze stanem 
-
-PlanAtributes.ServiceAreaId popwiazany ze stanem 
-
-PlanAtributes.FormularyId numer formularza 
-
+Kolumny przydatne do rozbudowania aplikacji
 PlanAtributes.IsNewPlan 6 options, osobna tabela 
 
 Existing
@@ -38,18 +36,32 @@ PPO
 
 https://www.cigna.com/individuals-families/understanding-insurance/hmo-ppo-epo
 
-PlanAtributes.MetalLevel 10 opcji, osobny plik 
+PlanAtributes.DentalOnlyPlan yes/no
 
-Bronze
-Catastrophic
-EPO
-Gold
-High
-HMO
-Low
-Platinum
-PPO
-Silver
+PlanAtributes.TIN -  [TIN] to osobisty numer używany dla celów podatkowych w danym kraju (czyli w kraju, w którym zgłasza się swoje podatki)
+
+PlanAtributes.StandardComponentId  HIOS portal 44-45 Component ID is the base identification of an insurance plan
+prior to it being submitted to a system.
+
+PlanAtributes.IsNoticeRequiredForPregnancy 4 opcje, osobny plik
+Both
+No
+Yes
+(pusty)
+
+
+
+Kolumny nieuzyteczne
+
+PlanAtributes.HIOSProductId strona 45 
+
+PlanAtributes.HPID duzo pustych rekordow 
+
+PlanAtributes.NetworkId powiazany ze stanem 
+
+PlanAtributes.ServiceAreaId popwiazany ze stanem 
+
+PlanAtributes.FormularyId numer formularza 
 
 PlanAtributes.UniquePlanDesign yes/ no , duzo pustych rekordow 
 
@@ -60,9 +72,5 @@ Off the Exchange
 On the Exchange
 Yes
 
-PlanAtributes.IsNoticeRequiredForPregnancy 4 opcje, osobny plik
-Both
-No
-Yes
-(pusty)
+
 	
