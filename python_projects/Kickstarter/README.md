@@ -1,0 +1,1 @@
+[Dane](https://www.kaggle.com/datasets/kemical/kickstarter-projects?select=ks-projects-201801.csv)

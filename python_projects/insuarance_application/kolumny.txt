@@ -1,0 +1,103 @@
+Kolumny kluczowe
+PlanAtributes.PlanMarketingName 4871 pozycji, osobny plik 
+PlanAtributes.MetalLevel 10 opcji, osobny plik 
+
+Bronze
+Catastrophic
+EPO
+Gold
+High
+HMO
+Low
+Platinum
+PPO
+Silver
+
+
+Kolumny przydatne do rozbudowania aplikacji
+PlanAtributes.IsNewPlan 6 options, osobna tabela 
+
+Existing
+New
+WIF001
+WIF002
+WIF004
+WIF008
+
+PlanAtributes.PlanType 6 opcji, osobna tabela 
+
+EPO
+Existing
+HMO
+Indemnity
+POS
+PPO
+
+
+https://www.cigna.com/individuals-families/understanding-insurance/hmo-ppo-epo
+
+PlanAtributes.DentalOnlyPlan yes/no
+
+PlanAtributes.TIN -  [TIN] to osobisty numer używany dla celów podatkowych w danym kraju (czyli w kraju, w którym zgłasza się swoje podatki)
+
+PlanAtributes.StandardComponentId  HIOS portal 44-45 Component ID is the base identification of an insurance plan
+prior to it being submitted to a system.
+
+PlanAtributes.IsNoticeRequiredForPregnancy 4 opcje, osobny plik
+Both
+No
+Yes
+(pusty)
+
+
+
+Kolumny nieuzyteczne
+
+PlanAtributes.HIOSProductId strona 45 
+
+PlanAtributes.HPID duzo pustych rekordow 
+
+PlanAtributes.NetworkId powiazany ze stanem 
+
+PlanAtributes.ServiceAreaId popwiazany ze stanem 
+
+PlanAtributes.FormularyId numer formularza 
+
+PlanAtributes.UniquePlanDesign yes/ no , duzo pustych rekordow 
+
+PlanAtributes.QHPNonQHPTypeId	 4 opcje, osobna tabela 
+
+Both
+Off the Exchange
+On the Exchange
+Yes
+
+DEHBDedCombInnOonFamilyPerPerson - The dollar amount of the combined in/out of network, individual deductible for drug EHB benefits 
+
+DEHBDedCombInnOonIndividual - The dollar amount of the combined in/out of network, individual deductible for drug EHB benefits 
+
+DEHBDedInnTier1Coinsurance - The percentage used for the tier 1 in network coinsurance for drug EHB benefits, unless a different coinsurance is listed for a specific benefit 
+
+DEHBDedInnTier1Family - The dollar amount of the tier 1 in network, family deductible for drug EHB benefits 
+
+DEHBDedInnTier1FamilyPerGroup - The dollar amount of the tier 1 in network, family per group deductible for drug EHB benefits 
+
+DEHBDedInnTier1FamilyPerPerson	 - The dollar amount of the tier 1 in network, family per person deductible for drug EHB benefits 
+
+DEHBDedInnTier1Individual - The dollar amount of the tier 1 in network, individual deductible for drug EHB benefits 
+	 
+DEHBDedInnTier2Coinsurance - The percentage used for the tier 2 in network coinsurance for drug EHB benefits, unless a different coinsurance is listed for a specific benefit 
+
+DEHBDedInnTier2Family - The dollar amount of the tier 2 in network, family deductible for drug EHB benefits 
+
+DEHBDedInnTier2FamilyPerGroup - The dollar amount of the tier 2 in network, family per group deductible for drug EHB benefits 
+
+DEHBDedInnTier2FamilyPerPerson	 - The dollar amount of the tier 2 in network, family per person deductible for drug EHB benefits 
+
+DEHBDedInnTier2Individual - The dollar amount of the tier 2 in network, individual deductible for drug EHB benefits 
+
+DEHBDedOutOfNetFamily	- The dollar amount of the out of network, family deductible for drug EHB benefits 
+
+DEHBDedOutOfNetFamilyPerGroup - The dollar amount of the out of network, family per group deductible for drug EHB benefits 
+
+	
