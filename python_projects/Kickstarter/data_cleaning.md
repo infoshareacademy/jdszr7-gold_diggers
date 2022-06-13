@@ -10,6 +10,8 @@
 3. Do zamiany `currency` na typ category.
 4. Do zamiany `state` na typ category.
 5. Do zamiany `country` na typ category.
+6. Do zamiany `launched` na typ datetime.
+7. Do zamiany `deadline` na typ datetime.
 
 
 # Co jest ok
