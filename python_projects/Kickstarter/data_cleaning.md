@@ -12,10 +12,13 @@
 5. Do zamiany `country` na typ category.
 6. Do zamiany `launched` na typ datetime.
 7. Do zamiany `deadline` na typ datetime.
+8. Istnieją rekordy z datą `launched` z 1970r. - **REKORDY DO USUNIĘCIA**
+9. W danych jest niepełny rok `launched` 2018. - **REKORDY DO USUNIĘCIA**
 
 
 # Co jest ok
 1. Nie ma wartości ujemnych w `backers`.
 2. Nie ma wartości ujemnych w `usd_pledged_real`.
 3. Nie ma wartości ujemnych w `usd_goal_real`.
+4. Nie ma wartości `launched` późniejszych niż `deadline`.
 
