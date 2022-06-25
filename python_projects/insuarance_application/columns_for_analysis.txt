@@ -1,7 +1,31 @@
 Kolumny kluczowe:
 
-
-
+PlanAtributes.BusinessYear - na tej kolumnie trzeba robić warunek, aby ograniczyć się do danych z konkretnego roku
+PlanAtributes.StateCode - do ograniczenia się do konkretnego stanu
+PlanAtributes.BenefitPackageId - klucz benefity
+PlanAtributes.MarketCoverage - podział ubezpieczeń na indywidualne i dla mały firm do 50 pracowników, tzw. SHOP (wyjaśnienie SHOP: https://www.healthcare.gov/small-businesses/employers/)
+PlanAtributes.DentalOnlyPlan
+PlanAtributes.PlanMarketingName - nazwa marketingowa planu
+PlanAtributes.PlanType
+    https://www.healthcare.gov/choose-a-plan/plan-types/ - EPO, HMO, POS, PPO
+    https://www.cigna.com/individuals-families/understanding-insurance/types-of-health-insurance - inna strona z wyjaśnieniem
+    https://www.webmd.com/health-insurance/types-of-health-insurance-plans - wypunktowana specyfikacja planów i za co się płaci
+    https://www.ehealthinsurance.com/health-plans/indemnity - indemnity plan
+PlanAtributes.MetalLevel - https://www.healthcare.gov/choose-a-plan/plans-categories/
+PlanAtributes.IsReferralRequiredForSpecialist - czy wymagane jest skierowanie do specjalisty
+PlanAtributes.CompositeRatingOffered - https://www.investopedia.com/terms/c/composite-rate.asp ryzyko obliczane dla całej grupy i dzielenie kosztów ubezpieczenia
+PlanAtributes.ChildOnlyOffering - ubezpieczenie dla dziecka, dorosłego, dorosłego + dziecko (do zestandaryzowania wartości)
+PlanAtributes.WellnessProgramOffered - https://www.healthcare.gov/glossary/wellness-programs/ - coś trochę jak multisport, ale też mogą oferować rzucenie palenia czy zrzucenie na wadze
+PlanAtributes.OutOfCountryCoverage - czy ubezpieczenie sięga poza kraj
 
 
 Kolumny przydatne (do rozbudowania aplikacji):
+
+PlanAtributes.IsNewPlan - czy plan jest nowy, czy istniał wcześniej na rynku
+PlanAtributes.UniquePlanDesign - ? (kolumna wymaga zestandaryzowania wartości)
+PlanAtributes.QHPNonQHPTypeId - https://www.ixshealth.com/exchange-vs-exchange specyficzne dla USA
+PlanAtributes.IsNoticeRequiredForPregnancy - czy wymagane jest zawiadomienie issuera zanim benefity związane z ciążą zostaną pokryte
+PlanAtributes.DiseaseManagementProgramsOffered - skierowane do chorych przewlekle, dość sporo wartości
+PlanAtributes.MedicalDrugDeductiblesIntegrated - czy usługi medyczne i leki są złączone do jednego potrącenia (?)
+
+
