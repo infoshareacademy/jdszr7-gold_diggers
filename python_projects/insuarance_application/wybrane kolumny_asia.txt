@@ -1,0 +1,77 @@
+Kolumny kluczowe:
+
+BenefitCostSharing.RowNumber - Numer wiersza szablonu powiązany z tym rekordem danych
+
+BenefitCostSharing.BenefitName - nazwa benefitu 
+
+BenefitCostSharing.BusinessYear - Rok, w którym plan zapewnia ochronę rejestrowanym, trzeba by po tym wyfiltorwać na 2016
+[dostępne lata:2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022]
+
+BenefitCostSharing.StateCode-Dwuznakowy skrót stanu wskazujący stan, w którym plan
+jest oferowany(Wszystkie 50 skrótów stanów + 9 skrótów terytorialnych)
+
+BenefitCostSharing.IsCovered - Wskaźnik czy świadczenie jest objęte planem ubepieczeniowym [ Covered
+Not Covered or not covered = blank]
+
+
+Kolumny które mogą być przydatne(do dyskusji):
+
+Objaśnienie: 
+[[Tier1 - 1 szczebel -Sickness and Accident Insuranc - ubezpieczenie chorobowe i wypadkowe
+Tier2 - 2 szczebel - General Insurance - Ubezpieczenie ogólne
+
+lekarze i placówki muszą spełniać określone wymagania dotyczące poświadczeń i wyrazić 
+zgodę na zaakceptowanie obniżonej stawki za usługi objęte planem zdrowotnym, aby być częścią sieci.
+ Ci dostawcy opieki zdrowotnej są uważani za w sieci.
+
+Jeśli lekarz lub placówka nie ma umowy z twoim planem zdrowotnym, są uważani za poza siecią 
+i mogą pobierać od ciebie pełną cenę. Zwykle jest znacznie wyższa niż stawka rabatu w sieci.
+BenefitCostSharing.CoinsInnTier1 - dla benefitów '1 szczebla', Procent (na przykład 20%), 
+jaki płacisz z dozwolonej kwoty za objęte ubezpieczeniem usługi 
+zdrowotne świadczeniodawcom, którzy zawarli umowę z Twoim ubezpieczeniem zdrowotnym lub planem.]]
+
+BenefitCostSharing.CoinsInnTier2 - dla benefitów '2 szczebla', Procent (na przykład 20%), 
+jaki płacisz z dozwolonej kwoty za objęte ubezpieczeniem usługi 
+zdrowotne świadczeniodawcom, którzy zawarli umowę z Twoim ubezpieczeniem zdrowotnym lub planem.
+
+BenefitCostSharing.CoinsOutofNet -Procent (na przykład 40%), jaki płacisz z dozwolonej kwoty za objęte
+ubezpieczeniem usługi zdrowotne świadczeniodawcom, którzy nie podpisali umowy z Twoim ubezpieczeniem 
+zdrowotnym lub planem. Współubezpieczenie poza siecią zazwyczaj kosztuje więcej niż współubezpieczenie 
+wewnątrz sieci.
+	
+BenefitCostSharing.CopayInnTier1 -Kwota w dolarach dla In Network Copay dla szczebla 1 za świadczenie	
+BenefitCostSharing.CopayInnTier2 - Kwota w dolarach dla In Network Copay dla szczebla 2 za świadczenie
+BenefitCostSharing.CopayOutofNet - kwota w dolarach za świadczenie POZA SIECIĄ
+	
+	
+BenefitCostSharing.Exclusions - Lista usług lub diagnoz wykluczonych ze świadczenia	
+BenefitCostSharing.Explanation- Uwagi podane w celu dalszego wyjaśnienia limitów lub wyłączeń zakresu świadczeń
+	
+
+BenefitCostSharing.IsEHB - Wskaźnik kategoryczny określający, czy korzyść jest uważana za niezbędną
+korzyść zdrowotna
+	
+BenefitCostSharing.QuantLimitOnSvc - Wskaźnik określający, czy korzyść ma limit ilościowy (Yes,No (or blank) )	
+BenefitCostSharing.LimitQty - Wartość liczbowa limitu pokrycia świadczenia np.45*czyli 45 na LimitUnit = year - jezeli QuantLimitOnSvc = yes
+BenefitCostSharing.LimitUnit - Jednostka miary limitu pokrycia świadczenia [np. 1 wizyta na 6 miesięcy]	
+
+BenefitCostSharing.MinimumStay - Wartość liczbowa określająca minimalną liczbę godzin opieki stacjonarnej którą 
+pacjent musi miec zapewnioną dla tego świadczenia	
+
+
+Głównie odliczenia za leki lub usługi na różnych szczeblach, 
+zostawiam tu ale moim zdaniem nie ma sensu sie w to zagłębiać w takie szczegóły tych planów:
+
+PlanAttributes.DEHBDedOutOfNetIndividual 	
+PlanAttributes.DEHBDedOutofNetFamily
+PlanAttributes.DEHBDedOutofNetFamilyPerPerson 
+PlanAttributes.DEHBDedOutofNetFamilyPerGroup 
+PlanAttributes.DEHBDedCombInnOonIndividual
+PlanAttributes.DEHBDedCombInnOonFamily
+PlanAttributes.DEHBDedCombInnOonFamilyPerPerson
+PlanAttributes.DEHBDedCombInnOonFamilyPerGroup
+PlanAttributes.TEHBDedInnTier1Individual
+PlanAttributes.TEHBDedInnTier1FamilyPerPerson
+PlanAttributes.TEHBDedInnTier1Family
+PlanAttributes.TEHBDedInnTier1FamilyPerGroup 
+PlanAttributes.TEHBDedInnTier1Coinsurance
