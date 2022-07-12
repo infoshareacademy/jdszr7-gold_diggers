@@ -1,0 +1,25 @@
+Rate.BusinessYear - Rok, w którym plan zapewnia ochronę rejestrowanym
+Rate.StateCode - skrót nazwy stanu w którym dany plan jest oferowany
+Rate.PlanId - kod alfa-numeryczny identyfikujący plan ubezpieczenia w Systemie Nadzoru Ubezpieczeń Zdrowotnych
+Rate.RatingAreaId - identyfikator obszaru geograficznego w stanie(kazdy numer odpowiada regionowi w danym stanie)
+Rate.Tobacco - określenie czy używanie tytoniu przez abonenta jest wykorzystywane do określenia stawki
+Rate.Age - określenie czy wiek abonenta jest wykorzystywane do określenia stawki
+Rate.InvdividualRate - Stawka ubezpieczenia stosowana dla uprawnionego abonenta w danym obszarze w planie, który 
+oblicza stawki tylko według wieku lub rodziny(family-tier). w przypadku gdy w planie wpływ ma to czy osoba pali czy nie
+to ta stawka dotyczy nie palących
+Rate.IndividualTobaccoRate - Stawka ubezpieczenia w danym obszarze w planie, w którym wpływ na wysokość stawki ma to czy osoba pali
+czy nie, jest to stawka dla osób palących
+Rate.Couple - to pole jest tylko w przypadku, gdy w kategorii age jest Family Option. Stawka ubezpieczenia stosowana dla dwóch 
+subskrybentów (np. współmałżonek) w danym obszarze, w przypadku planu, w którym wpływ ma poziom rodzinny 
+Rate.PrimarySubscriberAndOneDependent - Stawka ubezpieczenia stosowana dla abonenta podstawowego i jednego na utrzymaniu w
+danym obszarze dla planu, który oceniany jest według poziomu rodzinnego(tylko dla family option)
+Rate.PrimarySubscriberAndTwoDependents -  Stawka ubezpieczenia stosowana dla abonenta podstawowego i dwóch na utrzymaniu w
+danym obszarze dla planu, który oceniany jest według poziomu rodzinnego(tylko dla family option)
+Rate.PrimarySubscriberAndThreeOrMoreDependents - Stawka ubezpieczenia stosowana dla abonenta podstawowego i trzech lub więcej na utrzymaniu w
+danym obszarze dla planu, który oceniany jest według poziomu rodzinnego(tylko dla family option)
+Rate.CoupleAndOneDependent - to pole jest tylko w przypadku, gdy w kategorii age jest Family Option. Stawka ubezpieczenia stosowana dla dwóch 
+subskrybentów (np. współmałżonek) i jednej na utrzymaniu w danym obszarze, w przypadku planu, w którym wpływ ma poziom rodzinny  
+Rate.CoupleAndTwoDependents -  to pole jest tylko w przypadku, gdy w kategorii age jest Family Option. Stawka ubezpieczenia stosowana dla dwóch 
+subskrybentów (np. współmałżonek) i dwóch na utrzymaniu w danym obszarze, w przypadku planu, w którym wpływ ma poziom rodzinny  
+Rate.CoupleAndThreeOrMoreDependents -  to pole jest tylko w przypadku, gdy w kategorii age jest Family Option. Stawka ubezpieczenia stosowana dla dwóch 
+subskrybentów (np. współmałżonek) i trzech lub więcej na utrzymaniu w danym obszarze, w przypadku planu, w którym wpływ ma poziom rodzinny  
