@@ -43,9 +43,7 @@ def count_plot_col(df, var_col:str, var_x:str,column_wrap:int =3, height_value:f
     g = sns.catplot(data = df, col = var1 , x = var2,  kind = 'count', height = height_value, col_wrap=column_wrap)
     g.set_titles('{col_name}');
 
-    
-    
-    
+       
 #funkcja 3 zmienne - po aggregujących  
 def bar_plot_3_var(df, var_col:str, var_x:str, var_y:str, hue_var:str,groupped_var:str, palette_list:list, column_wrap:int =3, height_value:float = 4):
     df_new = aggregate_fun(df, [var_x, var_col, hue_var], groupped_var )
