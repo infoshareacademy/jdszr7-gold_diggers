@@ -88,8 +88,31 @@ def filter_lower_equal(df, x, var_bar_plot:list):
     df_zadana_kwota = df[df.usd_goal_real <= x]
     g = barplot_pct(df_zadana_kwota, var_bar_plot)
     
+#funkcja tworząca liste unikalnych wartości do widgetów
+def unique_value_list(df, col_var:str):
+    return list(df[col_var].unique())
+
+#funkcja tworząca liste unikalnych wartości do widgetów sortująca 
+def unique_value_list_sorted(df, col_var:str):
+    return sorted(list(df[col_var].unique()))
     
     
+#funkcja definicja widgetu 
+def widget_def(lista:list, descr:str ):
+    return widgets.SelectMultiple(
+    options=lista,
+    value=[lista[0]],
+    rows=10,
+    description=descr,
+    disabled=False)
+    
+    
+def widget_layout(widget1, widget2):
+    layout = widgets.Layout(display='flex',
+         flex_flow='row',
+         border='solid green',
+         width='50%')
+    return widgets.Box(children=[widget1, widget2], layout=layout)
     
     
     
