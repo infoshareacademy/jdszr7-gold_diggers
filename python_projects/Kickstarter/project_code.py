@@ -1,6 +1,9 @@
 import pandas as pd
 import matplotlib as plt
 import seaborn as sns
+import ipywidgets as widgets
+from IPython.display import display, clear_output
+
 
 #funkcja import pliku
 def f_file_import(name:str):
@@ -10,6 +13,7 @@ def f_file_import(name:str):
 #funkcja agregująca dane do nowego DF
 def aggregate_fun(df, agg_list:list, measure:str):
     agg_df = df.groupby(agg_list)[measure].agg(['count',sum,'mean', 'median']).reset_index()
+    agg_df.rename(columns= {'count':'count_x', 'sum':'sum_x', 'mean':'mean_x', 'median':'median_x'}, inplace=True)
     return agg_df
 
     
