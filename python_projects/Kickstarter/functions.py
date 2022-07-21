@@ -68,7 +68,7 @@ def bar_plot_3_var(df, var_col:str, var_x:str, var_y:str, hue_var:str,zmienna_il
 
 
 #funkcja 3 zmienne - bez agregacji   
-def bar_plot_3_var_no_agg(df, var_col:str, var_x:str, var_y:str, hue_var:str, palette_list:list, column_wrap:int =3, height_value:float = 4, x_label:str='x', y_label:str='y', title_fig:str='Tytuł'):
+def bar_plot_3_var_no_agg(df, var_col:str, var_x:str, var_y:str, hue_var:str, palette_list:list, column_wrap:int =3, height_value:float = 4.0, x_label:str='x', y_label:str='y', title_fig:str='Tytuł'):
     g = sns.catplot(data = df, col = var_col , x = var_x, y = var_y, hue = hue_var, kind = 'bar', height = height_value, col_wrap = column_wrap, palette = palette_list, sharex = False)
     g.set_titles('{col_name}')
     g.set_axis_labels(x_label, y_label)
@@ -157,10 +157,7 @@ def barplot_pct_3_var(df, lista_3_elementy:list, x_label:str='x', y_label:str='y
     df_new_2['pct'] = df_new_2['count_y']/df_new_2['sum_x'] * 100
 
     #Odwołanie do funkcji tworzącej wykres
-    bar_plot_3_var_no_agg(df_new_2,'main_category', 'duration', 'pct', 'state', ['#FF6666','#66B266'], 1, 15.0, x_label=x_label, y_label=y_label, title_fig=title_fig)
-        #'main_category' 'country'
-        
-        # liczba zbiórek w danym kraju
+    bar_plot_3_var_no_agg(df_new_2,'main_category', 'duration', 'pct', 'state', ['#FF6666','#66B266'], 1, 10.0, x_label=x_label, y_label=y_label, title_fig=title_fig)
 
 
 
