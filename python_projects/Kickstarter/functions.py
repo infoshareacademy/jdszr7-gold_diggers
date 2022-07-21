@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib as plt
 import seaborn as sns
 import ipywidgets as widgets
+from ipywidgets import Layout
 from IPython.display import display, clear_output
 
 
@@ -117,6 +118,7 @@ def unique_value_list_sorted(df, col_var:str):
 def widget_def(lista:list, descr:str ):
     return widgets.SelectMultiple(
     options=lista,
+    layout=Layout(width='60%', height='200px'),
     value=[lista[0]],
     rows=10,
     description=descr,
@@ -157,4 +159,8 @@ def barplot_pct_3_var(df, lista_3_elementy:list, x_label:str='x', y_label:str='y
     #Odwołanie do funkcji tworzącej wykres
     bar_plot_3_var_no_agg(df_new_2,'main_category', 'duration', 'pct', 'state', ['#FF6666','#66B266'], 1, 15.0, x_label=x_label, y_label=y_label, title_fig=title_fig)
         #'main_category' 'country'
+        
+        # liczba zbiórek w danym kraju
+
+
 
