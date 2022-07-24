@@ -101,7 +101,10 @@ def sorting_values(df_agg, value_by:str = 'mean', sorting_var:bool = False):
 #funkcja filtrująca 
 def filter_greater_equal(df, x, var_bar_plot:list, color='pastel', x_label:str='x', y_label:str='y', title_fig:str='Tytuł'):
     df_zadana_kwota = df[df.usd_goal_real >= x]
-    g = barplot_pct(df_zadana_kwota, var_bar_plot, color, x_label, y_label, title_fig)
+    try:
+        g = barplot_pct(df_zadana_kwota, var_bar_plot, color, x_label, y_label, title_fig)
+    except:
+        print("Niestety nie było zbiórki z zakładaną przez Ciebie kwotą celu. :(")
 
     
 #funkcja tworząca liste unikalnych wartości do widgetów
